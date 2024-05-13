@@ -1,4 +1,7 @@
-$subGreen:#009132;
+$subG:#009132;
+$subY:#FFBB0D;
+$lims:1rem;
+$limy:0.5rem;
 
 @mixin menuTitle{
     font-family: "Noto Sans KR" ;
@@ -13,5 +16,30 @@ $subGreen:#009132;
     color: #666;
     font-size: 1rem;
 }
-a {color: #333; text-decoration: none;}
-li {list-style: none;}
+#hd{
+    .inner{
+        border-bottom: 1px solid;
+        border-color: $subY;
+        h1{ 
+            margin: 0 auto;
+            font-size: 0;
+            a{
+                img{
+
+                }
+            }
+        }
+        ul{
+            position: absolute;
+            right: 0;
+            li{
+                margin-left: $lims;
+            }
+        }
+    }
+    .gnb{
+        li{
+            margin: $limy 0 $limy $lims;
+        }
+    }
+}

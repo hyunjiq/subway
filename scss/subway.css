@@ -1,8 +1,18 @@
-a {
-  color: #333;
-  text-decoration: none;
+#hd .inner {
+  border-bottom: 1px solid;
+  border-color: #FFBB0D;
 }
-
-li {
-  list-style: none;
+#hd .inner h1 {
+  margin: 0 auto;
+  font-size: 0;
+}
+#hd .inner ul {
+  position: absolute;
+  right: 0;
+}
+#hd .inner ul li {
+  margin-left: 1rem;
+}
+#hd .gnb li {
+  margin: 0.5rem 0 0.5rem 1rem;
 }
