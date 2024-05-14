@@ -1,18 +1,27 @@
-#hd .inner {
-  border-bottom: 1px solid;
-  border-color: #FFBB0D;
+#hd div .iconMenu li a {
+  font-size: 0.9rem;
 }
-#hd .inner h1 {
-  margin: 0 auto;
-  font-size: 0;
+#hd .gnb {
+  border-top: 1px solid #FFBB0D;
 }
-#hd .inner ul {
+#hd .gnb li a {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#banner .mainBanner {
+  background: url(../img/mainBanner/bg.jpg) no-repeat center;
+  height: 0;
+  padding-top: 49.34%;
+  background-size: cover;
+  position: relative;
+  max-width: 95%;
+  border-radius: 1rem 0 1rem 1rem;
+}
+#banner img {
   position: absolute;
+  bottom: 5.3rem;
+  left: 0;
   right: 0;
-}
-#hd .inner ul li {
-  margin-left: 1rem;
-}
-#hd .gnb li {
-  margin: 0.5rem 0 0.5rem 1rem;
+  margin: auto;
 }

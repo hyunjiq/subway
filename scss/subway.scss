@@ -1,7 +1,5 @@
 $subG:#009132;
 $subY:#FFBB0D;
-$lims:1rem;
-$limy:0.5rem;
 
 @mixin menuTitle{
     font-family: "Noto Sans KR" ;
@@ -17,29 +15,40 @@ $limy:0.5rem;
     font-size: 1rem;
 }
 #hd{
-    .inner{
-        border-bottom: 1px solid;
-        border-color: $subY;
-        h1{ 
-            margin: 0 auto;
-            font-size: 0;
-            a{
-                img{
-
-                }
-            }
-        }
-        ul{
-            position: absolute;
-            right: 0;
+    div{
+        .iconMenu{
             li{
-                margin-left: $lims;
+                a{
+                    font-size: .9rem;
+                }
             }
         }
     }
     .gnb{
+        border-top:1px solid $subY;
         li{
-            margin: $limy 0 $limy $lims;
+            a{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
         }
+    }
+}
+#banner{    
+    .mainBanner{        
+        background: url(../img/mainBanner/bg.jpg) no-repeat center;
+        height:0;
+        padding-top: 49.34%;
+        background-size: cover;
+        position: relative;
+        max-width: 95%;
+        border-radius: 1rem 0 1rem 1rem;
+    }
+    img{
+        position: absolute;
+        bottom: 5.3rem;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }

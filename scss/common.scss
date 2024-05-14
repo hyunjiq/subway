@@ -1,10 +1,7 @@
-a {color: #333; text-decoration: none;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+a {color: #333; text-decoration: none; font-family: "Noto Sans KR", sans-serif;}
 ul,li{margin: 0; padding: 0;}
 li {list-style: none;}
-.sr_only{
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-}
+.w-0{width: 0 !important;}
+.gnb-li-m{margin-right: 2.5rem;margin-left: 2.5rem;}
+.font0{font-size: 0;}
