@@ -5,3 +5,11 @@ li {list-style: none;}
 .w-0{width: 0 !important;}
 .gnb-li-m{margin-right: 2.5rem;margin-left: 2.5rem;}
 .font0{font-size: 0;}
+.pageTitle{display: block; height: 8rem; margin: 5rem auto 0; }
+.titleText{text-align: center; font-size: 1.1rem; font-weight: 300; color: #666;}
+.hidden{
+    display: block;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    color:transparent !important
+}

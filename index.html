@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="./css/subway.min.css">
 </head>
 <body>
-    <header id="hd">
+    <!-- 헤더 -->
+    <header id="hd" class=" position-relative">
         <div class="container d-flex justify-content-between align-items-center">
             <h1 class="my-4 w-100 d-flex justify-content-center"><a class="font0" href="/"><img src="./img/logo.png" alt=""></a></h1>
             <ul class="iconMenu w-0 ps-0 mb-0 d-flex justify-content-end">
@@ -34,28 +35,106 @@
                 <li class="mx-3"><a class="text-nowrap">로그인</a></li>
                 <li class="mx-3"><a class="text-nowrap">회원가입</a></li>
             </ul>
-        </div>       
-
-        <ul class="gnb d-flex justify-content-center py-1 ps-0">
-            <li class="gnb-li-m my-1"><a href="">메뉴소개</a></li>
-            <li class="gnb-li-m my-1"><a href="">이용방법</a></li>
-            <li class="gnb-li-m my-1"><a href="">새소식</a></li>
-            <li class="gnb-li-m my-1"><a href="">써브웨이</a></li>
-            <li class="gnb-li-m my-1"><a href="">가맹점</a></li>
-            <li class="gnb-li-m my-1"><a href="">온라인 주문</a></li>
-        </ul>
-              
+        </div>  
+        <ul class="gnb d-flex justify-content-center ps-0">
+            <li class="gnb-li position-relative">
+                <a class="gnb-a" href="">메뉴소개</a>
+                <ul class="gnb-ul position-absolute">
+                    <li><a href="">샌드위치</a></li>
+                    <li><a href="">랩ㆍ기타</a></li>
+                    <li><a href="">샐러드</a></li>
+                    <li><a href="">아침메뉴</a></li>
+                    <li><a href="">스마일 썹</a></li>
+                    <li><a href="">단체메뉴</a></li>
+                </ul>
+            </li>
+            <li class="gnb-li position-relative">
+                <a class="gnb-a" href="">이용방법</a>
+                <ul class="gnb-ul position-absolute">
+                    <li><a href="">써브웨이 이용방법</a></li>
+                    <li><a href="">단체메뉴 이용방법</a></li>
+                    <li><a href="">신선한 재료 소개</a></li>
+                    <li><a href="">App 이용방법</a></li>
+                </ul>
+            </li>
+            <li class="gnb-li position-relative">
+                <a class="gnb-a" href="">새소식</a>
+                <ul class="gnb-ul position-absolute">
+                    <li><a href="">이벤트ㆍ프로모션</a></li>
+                    <li><a href="">뉴스ㆍ공지사항</a></li>
+                    <li><a href="">광고영상</a></li>
+                </ul>
+            </li>
+            <li class="gnb-li position-relative">
+                <a class="gnb-a" href="">써브웨이</a>
+                <ul class="gnb-ul position-absolute">
+                    <li><a href="">써브웨이 역사</a></li>
+                    <li><a href="">써브웨이 약속</a></li>
+                    <li><a href="">샌드위치 아티스트 지원</a></li>
+                    <li><a href="">매장찾기</a></li>
+                </ul>
+            </li>
+            <li class="gnb-li position-relative">
+                <a class="gnb-a" href="">가맹점</a>
+                <ul class="gnb-ul position-absolute">
+                    <li><a href="">써브웨이 프랜차이즈</a></li>
+                    <li><a href="">가맹관련 FAQ</a></li>
+                    <li><a href="">가맹신청ㆍ문의</a></li>
+                    <li><a href="">지사안내</a></li>
+                    <li><a href="">사업설명회</a></li>
+                </ul>
+            </li>
+            <li class="gnb-li position-relative">
+                <a class="gnb-a" href="">온라인 주문</a>
+                <ul class="gnb-ul position-absolute">
+                    <li><a href="">FAST-SUB</a></li>
+                    <li><a href="">HOME-SUB</a></li>
+                    <li><a href="">단체주문</a></li>
+                </ul>
+            </li>
+        </ul>    
     </header>
+    <!-- 배너 -->
     <section id="banner">
         <div class="mainBanner mx-auto">
             <img class="animate__animated animate__fadeInRightBig" src="./img/mainBanner/mainSandwich.png" alt="">
         </div>
     </section>
-    <section id="sandwich"></section>
+    <!-- 클래식샌드위치 -->
+    <section id="sandwich">
+        <img class="pageTitle" src="./img/sandwich/classicSandwich.svg" alt="클래식샌드위치">
+        <p class="titleText">전세계 넘버원 브랜드 Subway!<span class="hidden"></span> 50년 전통의 세계 최고의 샌드위치를 맛보세요!</p>
+        <div id="sandwichSwiper" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/sandwich/sandwich1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/sandwich/sandwich2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/sandwich/sandwich3.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/sandwich/sandwich1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/sandwich/sandwich2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/sandwich/sandwich3.png" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper("#sandwichSwiper", {
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 5,
+                spaceBetween: 20,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+    </section>
     <section id="salad"></section>
     <section id="sub"></section>
     <section id="group"></section>
     <section id="video"></section>
+    <aside id="quik"></aside>
     <footer id="ft"></footer>
 </body>
 </html>

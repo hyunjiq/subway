@@ -14,7 +14,9 @@ $subY:#FFBB0D;
     color: #666;
     font-size: 1rem;
 }
+// 헤더
 #hd{
+    z-index: 100;
     div{
         .iconMenu{
             li{
@@ -26,14 +28,37 @@ $subY:#FFBB0D;
     }
     .gnb{
         border-top:1px solid $subY;
-        li{
-            a{
+        &::before{
+            content: "";
+            background: #fff;
+            height: 250px;
+            position: absolute;
+            width: 100%;
+        }
+        .gnb-li{
+            padding: .5rem 2.5rem;
+            text-align: center;
+            white-space: nowrap;
+            .gnb-a{
                 font-size: 1.1rem;
                 font-weight: 500;
+            }
+            .gnb-ul{
+                top: 100%;
+                left: 0;
+                right: 0;
+                &::before{
+                    content: "";
+                    padding-top: .5rem;
+                }
+                li{
+                    padding: .3rem 0;
+                }
             }
         }
     }
 }
+// 배너
 #banner{    
     .mainBanner{        
         background: url(../img/mainBanner/bg.jpg) no-repeat center;
@@ -51,4 +76,8 @@ $subY:#FFBB0D;
         right: 0;
         margin: auto;
     }
+}
+// 클래식샌드위치
+#sandwich{
+    
 }
